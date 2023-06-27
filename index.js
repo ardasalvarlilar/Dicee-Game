@@ -18,8 +18,8 @@ const diceRolling = () =>{
 const changeBackground = () =>{  
   const randomNumberForSecondDice = Math.ceil(Math.random() * 5)
   const randomNumberForFirstDice = Math.ceil(Math.random() * 5)
-  firstDiceDiv.style.backgroundImage = `url(../images/dice${randomNumberForFirstDice}.png)`
-  secondDiceDiv.style.backgroundImage = `url(../images/dice${randomNumberForSecondDice}.png)`
+  firstDiceDiv.style.backgroundImage = `url(./images/dice${randomNumberForFirstDice}.png)`
+  secondDiceDiv.style.backgroundImage = `url(./images/dice${randomNumberForSecondDice}.png)`
   if(randomNumberForFirstDice === randomNumberForSecondDice){
     won.textContent = `Tie!`
   }else if(randomNumberForFirstDice < randomNumberForSecondDice){
